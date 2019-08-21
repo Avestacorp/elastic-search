@@ -401,6 +401,26 @@ class QueryBuilder
     {
         return new Elastica\Query\Regexp($field, $regexp, $boost);
     }
+    
+    /**
+     * Returns a Wildcard query to query documents.
+     *
+     * ### Example:
+     *
+     * {{{
+     *  $builder->wildcard('name.first', '*a*');
+     * }}}
+     *
+     * @param string $field The field to query by.
+     * @param string $exp The expression.
+     * @param float $boost Boost
+     * @return \Elastica\Query\Wildcard
+     * @see https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-wildcard-query.html
+     */
+    public function wildcard($field, $exp, $boost = 1.0)
+    {
+        return new Elastica\Query\Wildcard($field, $exp, $boost);
+    }
 
     /**
      * Returns a Script query object that allows to query based on the return value of a script.
