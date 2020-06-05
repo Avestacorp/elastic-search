@@ -1,9 +1,9 @@
 {
-    "name": "Avestacorp/elastic-search",
+    "name": "avestacorp/elastic-search",
     "description": "An Elastic Search datasource and data mapper for CakePHP 3.0",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "elasticsearch"],
-    "homepage": "https://github.com/Avestacorp/elastic-search",
+    "homepage": "https://github.com/avestacorp/elastic-search",
     "license": "MIT",
     "authors": [
         {
